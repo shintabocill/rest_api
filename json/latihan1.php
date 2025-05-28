@@ -8,7 +8,7 @@ $data_mahasiswa = [
         "nama" => "Shintarizki",
         "nim" => "2217020034",
         "email" => "shintarizkiayuutami@gmail.com"
-// membuat data mahasiswa lebih dari satu 
+ 
     ],
     [   
         "nama" => "ayuutami",
@@ -17,7 +17,7 @@ $data_mahasiswa = [
 
 
 ];
-
+//data nya ambil didatabase
 $dbh = new PDO('mysql:host=localhost;dbname=db_mahasiswa', 'root', '');
 $db = $dbh->prepare('SELECT * FROM mahasiswa');
 $db->execute();
