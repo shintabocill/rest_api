@@ -2,13 +2,13 @@
 <!-- // mengubah array menjadi json  -->
 <?php
 
-// membuat data mahasiswa menjadi lebih dair satu
+
 $data_mahasiswa = [
     [
         "nama" => "Shintarizki",
         "nim" => "2217020034",
         "email" => "shintarizkiayuutami@gmail.com"
-    
+// membuat data mahasiswa lebih dari satu 
     ],
     [   
         "nama" => "ayuutami",
