@@ -1,0 +1,35 @@
+ [
+     {
+
+
+        "nama": "Shintarizki",
+        "umur":  22,
+        "nim": "2217020034",
+        "lulus": true,
+        "hobby": [
+            "Travelling",
+            "hiking"
+        ],
+        "pembimbing": {
+        "pembimbing1": "Doddy Ferdiansyah",
+        "pembibing2": "Erik Doank"
+        }
+    },
+    {
+
+        "nama": "Rizkiayu",
+        "umur":  23,
+        "nim": "2217020033",
+        "lulus": true,
+        "hobby": [
+            "menulis",
+            "membaca"
+        ],
+        "pembimbing": {
+        "pembimbing1": "Doddy Ferdiansyah",
+        "pembibing2": "Erik Doank"
+        }
+    }
+    
+    ]
+
