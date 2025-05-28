@@ -1,4 +1,6 @@
-let mahasiswa = {
+
+//objek menjadi json
+    let mahasiswa = {
     nama: "shintarizki",
     nim: "2217020034",
     email: "shintarizkiayuutami@gmail.com"
