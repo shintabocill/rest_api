@@ -7,6 +7,7 @@ $data_mahasiswa = [
         "nama" => "Shintarizki",
         "nim" => "2217020034",
         "email" => "shintarizkiayuutami@gmail.com"
+    
     ],
     [   
         "nama" => "ayuutami",
@@ -21,7 +22,7 @@ $db = $dbh->prepare('SELECT * FROM mahasiswa');
 $db->execute();
 $mahasiswa = $db->fetchAll(PDO::FETCH_ASSOC);
 
-
+// ubah mahasiswa yang jadi array menjadi json
 $data = json_encode($mahasiswa);
 echo $data;
 
