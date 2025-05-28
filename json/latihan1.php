@@ -2,6 +2,7 @@
 <!-- // mengubah array menjadi json  -->
 <?php
 
+// membuat data mahasiswa menjadi lebih dair satu
 $data_mahasiswa = [
     [
         "nama" => "Shintarizki",
