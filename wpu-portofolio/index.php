@@ -72,14 +72,18 @@
     <!-- Youtube & IG --> 
      <selection class="social bg-light" id="social">
       <div class="container">
-      <div clas="row">
+      <div clas="row pt-4 mb-4">
         <div class="col text-center">
           <h2>Social Media</h2>
 
 
 
-
-    <!-- Portfolio -->
+      <div class="row jus justify-content-center">
+        <div class="col md-5"></div>
+        <h5>WebProgramingUNPAS</h5>
+        <img src="img/profile1.png" width="100">
+        <div class="col md-5"></div>
+    <!-- Portfolio --> 
     <section class="portfolio " id="portfolio">
       <div class="container">
         <div class="row pt-4 mb-4">
