@@ -70,17 +70,17 @@
 
 
     <!-- Youtube & IG --> 
-     <selection class="social" id="social">
+     <selection class="social bg-light" id="social">
       <div class="container">
       <div clas="row">
-        <div class="col">
+        <div class="col text-center">
           <h2>Social Media</h2>
 
 
 
 
     <!-- Portfolio -->
-    <section class="portfolio bg-light" id="portfolio">
+    <section class="portfolio " id="portfolio">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
@@ -149,7 +149,7 @@
 
 
     <!-- Contact -->
-    <section class="contact" id="contact">
+    <section class="contact bg-light" id="contact">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
