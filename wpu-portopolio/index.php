@@ -69,58 +69,8 @@
     </section>
 
 
-    <!-- Youtube & IG -->
-<section class="social bg-light" id="social">
-  <div class="container">
-    <div class="row pt-4 mb-4">
-      <div class="col text-center">
-        <h2>Social Media</h2>
-      </div>
-    </div>
-
-    <!-- Profil WebProgramingBOCIL dan Shintarizki -->
-    <div class="row justify-content-center mb-4">
-      <!-- WebProgramingBOCIL -->
-      <div class="col-md-5 d-flex align-items-center mb-3">
-        <img src="img/profile1.png" width="100" class="rounded-circle img-thumbnail mr-3">
-        <div>
-          <h5>WebProgramingBOCIL</h5>
-          <p>70.000 Subscribers</p>
-        </div>
-      </div>
-
-      <!-- Shintarizki -->
-      <div class="col-md-5 d-flex align-items-center mb-3">
-        <img src="img/profile1.png" width="100" class="rounded-circle img-thumbnail mr-3">
-        <div>
-          <h5>Shintarizki</h5>
-          <p>3.000 Followers</p>
-        </div>
-      </div>
-    
-
-<div class="row mt-3 pb-3">
-  <div class="col text-center">
-    <div class="ig-thumbnail">
-      <img src="img/thumbs/1.png" width="80" class="img-fluid rounded">
-    </div>
-  </div>
-</div>
-
- <!-- Video YouTube -->
-      <div class="col-md-3">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NasyGUeNMTs?rel=0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- Portfolio --> 
-    <section class="portfolio  bg-light " id="portfolio">
+    <!-- Portfolio -->
+    <section class="portfolio bg-light" id="portfolio">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
@@ -189,7 +139,7 @@
 
 
     <!-- Contact -->
-    <section class="contact bg-light" id="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
