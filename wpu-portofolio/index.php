@@ -97,7 +97,15 @@
           <p>3.000 Followers</p>
         </div>
       </div>
+    
+
+<div class="row mt-3 pb-3">
+  <div class="col text-center">
+    <div class="ig-thumbnail">
+      <img src="img/thumbs/1.png" width="80" class="img-fluid rounded">
     </div>
+  </div>
+</div>
 
  <!-- Video YouTube -->
       <div class="col-md-3">
