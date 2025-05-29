@@ -69,22 +69,50 @@
     </section>
 
 
-    <!-- Youtube & IG --> 
-     <selection class="social bg-light" id="social">
-      <div class="container">
-      <div clas="row pt-4 mb-4">
-        <div class="col text-center">
-          <h2>Social Media</h2>
+    <!-- Youtube & IG -->
+<section class="social bg-light" id="social">
+  <div class="container">
+    <div class="row pt-4 mb-4">
+      <div class="col text-center">
+        <h2>Social Media</h2>
+      </div>
+    </div>
+
+    <!-- Profil WebProgramingBOCIL dan Shintarizki -->
+    <div class="row justify-content-center mb-4">
+      <!-- WebProgramingBOCIL -->
+      <div class="col-md-5 d-flex align-items-center mb-3">
+        <img src="img/profile1.png" width="100" class="rounded-circle img-thumbnail mr-3">
+        <div>
+          <h5>WebProgramingBOCIL</h5>
+          <p>70.000 Subscribers</p>
+        </div>
+      </div>
+
+      <!-- Shintarizki -->
+      <div class="col-md-5 d-flex align-items-center mb-3">
+        <img src="img/profile1.png" width="100" class="rounded-circle img-thumbnail mr-3">
+        <div>
+          <h5>Shintarizki</h5>
+          <p>3.000 Followers</p>
+        </div>
+      </div>
+    </div>
+
+ <!-- Video YouTube -->
+      <div class="col-md-3">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NasyGUeNMTs?rel=0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
-      <div class="row jus justify-content-center">
-        <div class="col md-5"></div>
-        <h5>WebProgramingUNPAS</h5>
-        <img src="img/profile1.png" width="100">
-        <div class="col md-5"></div>
     <!-- Portfolio --> 
-    <section class="portfolio " id="portfolio">
+    <section class="portfolio  bg-light " id="portfolio">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
