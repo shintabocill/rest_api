@@ -69,6 +69,19 @@
     </section>
 
 
+    <!-- Youtube & IG -->
+     <section.social#social" id="social">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">">
+          <h2>Social Media</h2>
+        </div>
+      </div>
+     </div>
+   </section>
+
+
+
     <!-- Portfolio -->
     <section class="portfolio bg-light" id="portfolio">
       <div class="container">
