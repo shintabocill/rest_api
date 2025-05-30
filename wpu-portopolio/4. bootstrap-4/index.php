@@ -1,16 +1,30 @@
 <?php
-$curl = curl_init();
-curl_setopt($curl,CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UChEPJjic7-LWF1wJTXKnOLg&key=AIzaSyDL5XfafKYQzBWf3yYaWlCj1bfwbK8HTeA' );
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-$result = curl_exec($curl);
-curl_close($curl);
+function get_CURL($url) {
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    $result = curl_exec($curl);
+    curl_close($curl);
+    return json_decode($result, true);
+}
 
-$result = json_decode($result, true);
-var_dump($result);
+$result = get_CURL ('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UChEPJjic7-LWF1wJTXKnOLg&key=AIzaSyDL5XfafKYQzBWf3yYaWlCj1bfwbK8HTeA');
 
-$youtubeProfilepic = $result['items'][0]['snippet']['thumbnails'] ['medium']['url'];
+if (isset($result['items'][0])){
+    $youtubeProfilepic = $result['items'][0]['snippet']['thumbnails'] ['medium']['url'];
+    $channelName =  $result['items'][0]['snippet']['title'];
+    $subscriber = $result['items'][0]['statistics']['subscriberCount'];
+} else {
+    $youtubeProfilepic = 'img/default.png';
+    $channelName =  'Channel Not Found';
+    $subscriber = '0';
+}
+
+// latest video
+$urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyBqFGD13a1ZbU9wmhZSjDZxtoHPgBByTcQ&channelId=UChEPJjic7-LWF1wJTXKnOLg&maxResults=1&order=date&part=snippet';
+$result = get_CURL($urlLatestVideo);
+$latestVideoId = isset($result['items'][0]['id']['videoId']) ? $result['items'][0]['id']['videoId'] : 'dQw4w9WgXcQ'; 
 ?>
-
 
 <!doctype html>
 <html lang="en">
@@ -98,14 +112,14 @@ $youtubeProfilepic = $result['items'][0]['snippet']['thumbnails'] ['medium']['ur
             <img src="<?= $youtubeProfilepic; ?>" width="150" class="rounded-circle img-thumbnail">
           </div>
           <div class="col-md-8">
-            <h5>WebProgrammingBocil</h5>
-            <p>5000 Susbcribers</p>
+            <h5><?= $channelName; ?></h5>
+           <p><?= $subscriber; ?>Subscribers</p>
           </div>
         </div>
         <div class="row mt-3 pd-3">
           <div class="col">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aOh1Ye_b7ww?rel=0" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?= $urllatestVideoId;?>?rel=0" allowfullscreen></iframe>
           </div>
        </div>
   </div>
