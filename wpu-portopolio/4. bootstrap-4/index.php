@@ -1,5 +1,16 @@
 <?php
-$curl_init();
+$curl = curl_init();
+curl_setopt($curl,CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UChEPJjic7-LWF1wJTXKnOLg&key=AIzaSyDL5XfafKYQzBWf3yYaWlCj1bfwbK8HTeA' );
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$result = curl_exec($curl);
+curl_close($curl);
+
+$result = json_decode($result, true);
+var_dump($result);
+
+$youtubeProfilepic = $result['items'][0]['snippet']['thumbnails'] ['medium']['url'];
+?>
+
 
 <!doctype html>
 <html lang="en">
@@ -84,7 +95,7 @@ $curl_init();
       <div class="col-md-5">
         <div class="row">
           <div class="col-md-4">
-            <img src="img/profile1.png" width="150" class="rounded-circle img-thumbnail">
+            <img src="<?= $youtubeProfilepic; ?>" width="150" class="rounded-circle img-thumbnail">
           </div>
           <div class="col-md-8">
             <h5>WebProgrammingBocil</h5>
