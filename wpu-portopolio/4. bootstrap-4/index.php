@@ -1,3 +1,6 @@
+<?php
+$curl_init();
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -91,7 +94,7 @@
         <div class="row mt-3 pd-3">
           <div class="col">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vVokcbevq2Y?rel=0" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aOh1Ye_b7ww?rel=0" allowfullscreen></iframe>
           </div>
        </div>
   </div>
@@ -102,25 +105,34 @@
              <img src="img/profile1.png" width="150" class="rounded-circle img-thumbnail">
             </div>
              <div class="col-md-8">
-            <h5></h5>swetta.rius</h5>
+            <h5>swetta.rius</h5>
             <p>3000 Followers</p>
           </div>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <div class="ig-thumbnail">
-            <img src="img/thumbs/1.png">
+       <div class="container">
+    <div class="row mt-3 pb-3 justify-content-center">
+      <div class="col-md-4 text-center">
+        <div class="ig-thumbnail">
+          <img src="img/thumbs/1.png" class="img-fluid rounded" style="max-width: 150px;">
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="ig-thumbnail">
+          <img src="img/thumbs/2.png" class="img-fluid rounded" style="max-width: 150px;">
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="ig-thumbnail">
+          <img src="img/thumbs/3.png" class="img-fluid rounded" style="max-width: 150px;">
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
-
-
-
-
-    <!-- Portfolio -->
+   <!-- Portfolio -->
     <section class="portfolio bg-light" id="portfolio">
       <div class="container">
         <div class="row pt-4 mb-4">
